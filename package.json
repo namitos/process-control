@@ -1,0 +1,11 @@
+{
+  "name": "eskirf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "colors": "1.x"
+  },
+  "devDependencies": {},
+  "author": "Artem Tankayan"
+}
