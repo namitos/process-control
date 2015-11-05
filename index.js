@@ -34,7 +34,7 @@ module.exports = function (commands, conf) {
 		command.process = childProcess.fork(command.file, [], {
 			env: command.env
 		});
-		fs.writeFile(conf.pidsDir + '/' + command.process.pid, 'master', function () {
+		fs.writeFile(conf.pidsDir + '/' + command.process.pid, command.file, function () {
 		});
 		console.log(('new process ' + command.file + ' ' + command.process.pid).green, JSON.stringify(command.env).yellow);
 		command.process.on('exit', function () {
